@@ -7,6 +7,7 @@ package programacionorientadaobjetos2020.pkg1;
 
 
 import He.Pcgaming;
+import com.sun.org.apache.xpath.internal.operations.Equals;
 
 
 /**
@@ -21,7 +22,14 @@ public class ProgramacionOrientadaObjetos20201 {
     public static void main(String[] args) {
       
      Pcgaming  dell= new Pcgaming("usn16", "Dell", "i5800h", "8GB", "RTX 280 Ti", 8, 6, 2.6) ;
-    dell.mostrar();
+    dell.toString();
+     Pcgaming  de= new Pcgaming("usn16", "Dell", "i5800h", "8GB", "RTX 280 Ti", 8, 6, 2.6) ;
+    de.toString();
+        dell.equals(de);
+        
+    System.out.println(dell.toString());
+     
+    
       
        
        
