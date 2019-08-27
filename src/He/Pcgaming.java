@@ -44,4 +44,16 @@ public Pcgaming(String modelo,
                 "\nVideo RAM: "+vram+
                 "\nVelocidad Procesador: "+velpro);//To change body of generated methods, choose Tools | Templates.
     }
+    @Override
+     public String toString (){
+        String mensaje="El Modelo es "+getModelo()+" De "+getMarca()+" con un "+getProcesador()+" y "+getAlmacenamiento()+" de almacenamiento.\n "+tarjetag+" dedicada con "+vram+" GB de Video Ram "+gbram+" GB de ram "+velpro+" Htz en el procesador ";
+        return mensaje;
+    }
+     @Override
+     public boolean equals(Pcgaming de) {
+        if (this == de) System.out.println("hola");
+        if (de == null) System.out.println("adios");
+        return false;
+        
+}
 }

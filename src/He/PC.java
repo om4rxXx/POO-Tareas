@@ -10,7 +10,7 @@ package He;
  * @author Omar
  */
 public class PC {
-    private String modelo;
+    String modelo;
     private String marca;
     private String procesador;
     private String almacenamiento;
@@ -59,5 +59,16 @@ public class PC {
     public void setAlmacenamiento(String almacenamiento) {
         this.almacenamiento = almacenamiento;
     }
-    
-}
+    public String toString (){
+        String mensaje="El Modelo es "+modelo+"Marca  "+marca+" con un"+procesador+"  " +
+                "y un salario de "+almacenamiento;
+        return mensaje;
+    }
+     
+    public boolean equals(Pcgaming de) {
+        if (this == de) return true;
+        if (de == null) return false;
+        return false;
+        
+}}
+
